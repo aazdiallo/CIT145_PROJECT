@@ -1,0 +1,269 @@
+/*
+   Open Source vs. Proprietary Software style sheet
+   Author: Abdoul Diallo
+   Date:   02/01/2017
+
+   Filename: Project_CSS.css
+   Supporting Files: none
+*/
+
+/* reset the default margin and padding which are applied by the browser */
+* {
+   margin: 0;
+   padding: 0;
+
+}
+
+/* Body styles */
+body {
+/* background-color: #EBF5FF;*/
+margin: 0px auto;
+padding: 0px;
+line-height: 1.3em;
+width: 100%;
+max-width: 85%;
+min-width: 250px;
+font-family: "Courier New", Courier, monospace;
+}
+
+header h1 img {
+width: 100%;
+border: 0px;
+}
+
+section {
+width: 99%;
+float: left;
+padding: 5px;
+display: block;
+padding-bottom: 10px;
+margin-bottom: 10px;
+font-size: 20px;
+
+border-left: 3px solid teal;
+border-bottom: 3px solid teal;
+border-radius: 0px 0px 0px 45px;
+-moz-border-radius: 0px 0px 0px 45px;
+-webkit-border-bottom-left-radius: 45px;
+
+box-shadow:10px 10px 20px teal;
+-webkit-box-shadow:10px 10px 20px teal;
+-moz-box-shadow: 10px 10px 20px teal;
+}
+
+#Open {
+font-size: 25px;
+padding: 10px;
+color: black;
+}
+
+#summary{
+   float: right;
+   border: 3px solid teal;
+   margin: 3px;
+   padding: 2px;
+   border-radius: 20px 20px 20px 20px;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 25px;
+}
+#specifics {
+   text-align: center;
+   //float: center;
+   color: black;
+}
+/* Anchors styles definition */
+/* unvisited link */
+a:link {
+    color: maroon;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#situation{
+   float: left;
+   border: 3px solid teal;
+   margin: 3px;
+   padding: 2px;
+   border-radius: 20px 20px 20px 20px;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 25px;
+}
+
+/* Navigation list style definition */
+header nav ul li {
+display: block;
+float: right;
+width: 32%;
+font-size: 25px;
+text-align: center;
+border: 3px solid teal;
+margin: 3px;
+border-radius: 20px 20px 20px 20px;
+font-family: "Courier New", Courier, monospace;
+}
+
+section ul {
+list-style-type: none;
+}
+/* Proprietary logo position */
+.Left{
+	width: 25%;
+/* margin-top: 2em; */
+   float: left;
+   border: 3px solid teal;
+   margin: 3px;
+   padding: 5px;
+   border-radius: 20px 20px 20px 20px;
+}
+/* Open Source logo position */
+.Right {
+   width: 20%;
+/* margin-top: 2em; */
+   float: right;
+   border: 3px solid teal;
+   margin: 3px;
+   padding: 5px;
+   border-radius: 20px 20px 20px 20px;
+}
+
+section h1 {
+margin: 1em 0em;
+font-size: 1.3em;
+color: teal;
+font-family: "Courier New", Courier, monospace;
+}
+
+section p {
+margin: 5px 0em;
+color: maroon;
+font-family: "Courier New", Courier, monospace;
+}
+
+footer {
+clear: left;
+width: 100%;
+text-align: center;
+margin-top: 5px;
+}
+
+footer address {
+width: 100%;
+clear: left;
+font-size: 20px;
+font-style: normal;
+font-variant: small-caps;
+border-top: 1px solid teal;
+background-color: #43BFC7;
+border-radius: 45px 12px 45px 12px;
+}
+/* Setting the logos to blink */
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image /* , #summary, #situation */ {
+    -moz-animation: blink normal 5s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 5s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 5s infinite ease-in-out; /* IE */
+    animation: blink normal 5s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+/* Definition of the dropdown list styles */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    padding: 0px 0px;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
